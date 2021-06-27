@@ -1,0 +1,90 @@
+body {
+    background: url(../img/back_p1.jpg  ) fixed;
+    background-size: cover;
+}
+
+body::before {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content:'';
+    background-color: rgba(255, 244, 236, 0.712);
+}
+
+h2, h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(29, 31, 36);
+}
+
+.promo div {
+    text-align: center;
+}
+
+.promo img {
+    height: 220px;
+}
+
+.text img {
+    width: 550px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 490px;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 70%;
+    align-items: center;
+    margin: 0 auto;
+    flex-basis: 400px;
+}
+
+.promo {
+    width: 400px;
+    background: rgba(179, 111, 35, 0.815);
+    text-align: justify;
+    font-size: 12pt;
+    line-height: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.head {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+form {
+    margin-top: 10px;
+    text-align: center;
+}
+
+input, select, button {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    width: 40%;
+    font-size: 12pt;
+    background-color: white;
+}

@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Light.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}   
+
+img {
+    border-radius: 10px;
+}
+
+body {
+    background-color: rgb(226, 176, 134);
+    font-family: Roboto;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    background-color: rgb(4, 48, 78);
+    box-sizing: border-box;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 50px;
+}
+
+.space {
+    display: block;
+    height: 100px;
+}
+
+.logo {
+    background: url("../img/logo.jpg");
+    background-size: cover;
+    border-radius: 5px;
+    height: 55px;
+    width: 100px;
+    margin: 0;
+    padding-top: 17px;
+    box-sizing: border-box;
+}
+
+nav a, .a_logo, footer a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: rgb(216, 218, 246);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin: 0px 20px 0px 0px;
+    text-transform: uppercase;
+}
+
+footer {
+    height: 100px;
+    background-color: rgb(29, 31, 36);
+    color: rgb(216, 218, 246);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header [type="checkbox"] {
+    display: none;
+}
+
+label.toggleMenu {
+    display: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: url('../img/nav-icon.png') no-repeat;
+}
+
+label.toggleMenu span {
+    margin-left: 30px;
+}
+
+@media all and (max-width : 767px) {
+    nav {
+        display: none;
+        overflow: hidden;
+    }
+
+    nav ul {
+        display: flex;
+        width: 100%;
+    }
+
+    nav li {
+        background-color: rgb(4, 48, 78);
+        border-bottom: 1px solid rgb(0, 0, 0);
+        margin: 0;
+        padding: 5px;
+        box-sizing: border-box;
+        text-align: right;
+        text-transform: uppercase;
+        width: 200%;
+    } 
+
+    .right {
+        display: none;
+    }
+
+    label.toggleMenu {
+        display: block;
+    }
+
+    input.toggleMenu:checked + label.toggleMenu {
+        background-color: rgb(0, 0, 0);
+    }
+
+    input.toggleMenu:checked ~ nav {
+        display: flex;
+        width: 100%;
+    }
+}

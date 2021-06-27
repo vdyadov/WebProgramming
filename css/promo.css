@@ -1,0 +1,79 @@
+body {
+    background: url(../img/back_p1.jpg  ) fixed;
+    background-size: cover;
+}
+
+body::before {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content:'';
+    background-color: rgba(255, 244, 236, 0.719);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 70%;
+    align-items: flex-start;
+    margin: 0 auto;
+    flex-basis: 400px;
+}
+
+.info div {
+    width: 400px;
+    text-align: justify;
+    font-size: 13pt;
+    line-height: 25px;
+}
+
+.info img {
+    border-radius: 10px;
+    width: 400px;
+}
+
+.promo {
+    width: 400px;
+    background: rgba(179, 111, 35, 0.815);
+    text-align: justify;
+    font-size: 12pt;
+    line-height: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 5px;
+}
+
+.head {
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.left {
+    margin-top: 20px;
+    justify-content: flex-end;
+    font-size: 10pt;
+    align-items: flex-end;
+}
+
+.left span {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-right: 5px;
+}
